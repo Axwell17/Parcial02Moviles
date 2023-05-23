@@ -14,7 +14,7 @@ val height3 = 3000.0f
 val name4 = "Cerro de la Muerte"
 val height4 = 3491.0f
 
-var Mountains = mutableListOf<MountainModel>(
+var mountains = mutableListOf(
     MountainModel(name, height),
     MountainModel(name2, height2),
     MountainModel(name3, height3),

@@ -2,9 +2,9 @@ package com.example.parcial02.repository
 
 import com.example.parcial02.data.model.MountainModel
 
-class MountainRepository (private val mountain: MutableList<MountainModel>) {
+class MountainRepository (private val mountains: MutableList<MountainModel>) {
 
-    fun addMountain(mountain: MountainModel) = this.mountain.add(mountain)
+    fun addMountain(mountain: MountainModel) = mountains.add(mountain)
 
-    fun getMountain() = mountain
+    fun getMountain() = mountains
 }

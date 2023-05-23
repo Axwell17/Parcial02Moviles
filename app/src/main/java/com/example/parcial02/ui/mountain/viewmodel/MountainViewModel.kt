@@ -51,11 +51,12 @@ class MountainViewModel (private val repository: MountainRepository) : ViewModel
         status.value = INACTIVE
     }
 
-//    fun setSelectedMountain(mountain: MountainModel) {
-//        name.value = mountain
-//    }
+    fun setSelectedMountain(mountain: MountainModel) {
+        name.value = mountain.toString()
+    }
 
     companion object {
+        
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as MountainReviewerApplication

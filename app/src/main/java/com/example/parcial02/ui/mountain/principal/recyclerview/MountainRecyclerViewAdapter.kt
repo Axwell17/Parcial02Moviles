@@ -2,10 +2,12 @@ package com.example.parcial02.ui.mountain.principal.recyclerview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.example.parcial02.R
 import com.example.parcial02.data.model.MountainModel
+import com.example.parcial02.databinding.MountainItemBinding
 
-class MountainRecyclerViewAdapter(private val clickListener : (Int) -> Unit) {
+class MountainRecyclerViewAdapter(private val clickListener : (MountainModel) -> Unit):RecyclerView.Adapter<MountainRecyclerViewHolder>(){
     private val mountains = mutableListOf<MountainModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MountainRecyclerViewHolder {
